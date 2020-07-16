@@ -6,6 +6,7 @@ class Vendor(models.Model):
     user_name = models.CharField(max_length=200)
     logo = models.ImageField(upload_to='upload logo')
     user_email = models.EmailField(max_length=254)
-    
 
 
+    def __str__(self):
+        return self.shop_name
